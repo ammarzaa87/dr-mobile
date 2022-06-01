@@ -13,7 +13,7 @@
   
   .card {
     padding: 30px;
-    border: solid 1px rgba(0, 0, 0, 0.08);
+    border: solid 1px rgba(255, 0, 0, 0.08);
     cursor: pointer;
   }
   .card:hover {
@@ -22,29 +22,39 @@
   .card-title {
     margin-top: 20px;
     font-size: 30px;
+    text-align: center;
   }
   .card-text {
     font-size: 30px;
     color: rgba(0, 0, 0, 0.6);
     text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
   }
   .card-up {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.6);
+    text-align: center;
   }
   .card-text .fa {
     font-size: 26px;
+   
   }
   .avatar {
     width: 140px;
-    margin: auto;
+    text-align: center;
   }
   .avatar img {
     border: solid 6px transparent;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
   }
   .card:hover .avatar img {
     border-color: rgb(255, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   
   .btn {

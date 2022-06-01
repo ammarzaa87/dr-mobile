@@ -18,9 +18,9 @@ export default function ProfileCardView ({navigation}){
   
     return (
      
-      <div className="App">
+      <View className="App">
         
-      <div className="container">
+      <View className="container">
       <Button
               onPress={() => {navigation.replace('LoginScreen')}}
               title="Logout"
@@ -29,8 +29,8 @@ export default function ProfileCardView ({navigation}){
         
         <UserCard />
         
-      </div>
-    </div>
+      </View>
+    </View>
     
       
     );

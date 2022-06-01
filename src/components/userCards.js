@@ -1,19 +1,19 @@
 import React, { Component } from "react";
-import { Image, StyleSheet } from 'react-native'
+import { View, Image, StyleSheet } from 'react-native'
 var cards = [];
 const getMoviesFromApiAsync = async () => {
     
   try {
     const response = await fetch(
-      'http://localhost/MedLife/admin/php/critical.php'
+      'https://med-lifee.000webhostapp.com/admin/php/critical.php'
     );
     const json = await response.json();
     json.forEach((user) => {
       cards.push(
-        <div className="col-md-4 animated fadeIn" key={user.id}>
-        <div className="card">
-          <div className="card-body">
-            <div className="avatar">
+        <View className="col-md-4 animated fadeIn" key={user.id}>
+        <View className="card">
+          <View className="card-body">
+            <View className="avatar">
               <img
                 src={require('../assets/user.jpg')}
                 width="150"
@@ -21,7 +21,7 @@ const getMoviesFromApiAsync = async () => {
                 className="card-img-top"
                
               />
-            </div>
+            </View>
             <h5 className="card-title">
             {user.fname} {user.lname}
             </h5>
@@ -32,12 +32,12 @@ const getMoviesFromApiAsync = async () => {
             </p>
             <p className="card-text">
             Pressure: {user.pressure}
-              <br />
+             
               
             </p>
             <p className="card-text">
             Diabetes: {user.diabetes}
-              <br />
+              
               
             </p>
             <p className="card-text">
@@ -45,9 +45,9 @@ const getMoviesFromApiAsync = async () => {
               <br />
               
             </p>
-          </div>
-        </div>
-      </div>
+          </View>
+        </View>
+      </View>
       )
     
   })
@@ -62,8 +62,8 @@ class UserCards extends Component {
       
   render() {
     return (
-      <div className="clearfix">
-        <div className="row">
+      <View className="clearfix">
+        <View className="row">
           
             
 
@@ -71,9 +71,9 @@ class UserCards extends Component {
 
           
          
-        </div>
+        </View>
         
-      </div>
+      </View>
     );
   }
 }

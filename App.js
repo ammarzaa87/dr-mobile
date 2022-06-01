@@ -7,7 +7,7 @@ import { theme } from './src/core/theme'
 import {
  
   LoginScreen,
-  users,
+  Users,
  
 } from './src/screens'
 
@@ -25,7 +25,7 @@ export default function App() {
         >
           
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
-          <Stack.Screen name="Patients" component={users}
+          <Stack.Screen name="Patients" component={Users}
          options={{
           headerShown: true,
           headerRight: ({navigation}) => (
