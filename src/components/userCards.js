@@ -62,8 +62,8 @@ class UserCards extends Component {
       
   render() {
     return (
-      <View className="clearfix">
-        <View className="row">
+      <div className="clearfix">
+        <div className="row">
           
             
 
@@ -71,9 +71,8 @@ class UserCards extends Component {
 
           
          
-        </View>
-        
-      </View>
+</div>
+</div>
     );
   }
 }
